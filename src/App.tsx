@@ -14,6 +14,9 @@ export function App() {
                     <a href="/experiences" className="border-2 border-white border-opacity-75 rounded py-2 px-6 bg-transparent text-white text-xl font-bold">
                         Experiences
                     </a>
+                    <a href="https://discord.gg/JKbtSTCmbz" className="border-2 border-white border-opacity-75 rounded py-2 px-6 bg-transparent text-white text-xl font-bold">
+                        Discord
+                    </a>
                 </div>
             </div>
         </div>
