@@ -1,6 +1,6 @@
 export function App() {
     return (
-        <div className="h-screen flex flex-col md:flex-row justify-center items-center lg:space-x-16">
+        <div className="min-h-screen flex flex-col md:flex-row justify-center items-center lg:space-x-16">
             <div className="flex justify-center">
                 <img src="/kewi-icon.png" alt="Image" className="h-48 w-48 border-2 border-white border-opacity-25 rounded-full" />
             </div>

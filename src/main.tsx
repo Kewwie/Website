@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <main className="bg-primary h-screen font-default">
+        <main className="bg-primary min-h-screen font-default">
             <RouterProvider router={router} />
         </main>
     </React.StrictMode>,
