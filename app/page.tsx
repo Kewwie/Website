@@ -1,8 +1,12 @@
+import Image from 'next/image';
+
+import KewiIcon from '../public/kewi-icon.png';
+                
 export default function Home() {
     return (
         <div className="min-h-screen flex flex-col md:flex-row justify-center items-center lg:space-x-16">
             <div className="flex justify-center">
-                <img src="/kewi-icon.png" alt="Image" className="h-48 w-48 border-2 border-white border-opacity-25 rounded-full" />
+                <Image src={KewiIcon} alt="Image" width={200} height={200} className="border-2 border-white border-opacity-25 rounded-full" />
             </div>
             <div className="flex flex-col justify-center items-center max-w-sm">
                 <h1 className="text-6xl text-white">Kewwie</h1>

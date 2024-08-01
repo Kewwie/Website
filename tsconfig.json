@@ -12,6 +12,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    //"baseUrl": ".", // New for error thing
     "plugins": [
       {
         "name": "next"
