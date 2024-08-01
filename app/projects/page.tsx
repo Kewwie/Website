@@ -1,4 +1,4 @@
-export function Projects()  {
+export default function Projects() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center">
             <div className="space-y-4 flex flex-col items-center">

@@ -1,6 +1,6 @@
 import { FaArrowLeft } from "react-icons/fa";
 
-export function Experiences()  {
+export default function Experiences()  {
     return (
         <div className="min-h-screen flex flex-col items-center">
             <div className="absolute top-0 left-0 mt-4 ml-4 flex items-center opacity-50 hover:opacity-25">
