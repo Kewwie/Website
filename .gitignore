@@ -1,4 +1,9 @@
-.env
+.next/
+.vercel/
+
+*.env*
+!.env.*.example
+next-env.d.ts
 
 # Logs
 logs
@@ -9,7 +14,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+node_modules/
 dist
 dist-ssr
 *.local
