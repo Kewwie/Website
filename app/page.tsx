@@ -1,25 +1,48 @@
-import Image from 'next/image';
+import Image from "next/image"
+import Link from "next/link"
 
-import KewiIcon from '../public/kewi-icon.png';
-                
-export default function Home() {
+export default function Portfolio() {
     return (
-        <div className="min-h-screen flex flex-col md:flex-row justify-center items-center lg:space-x-16">
-            <div className="flex justify-center">
-                <Image src={KewiIcon} alt="Image" width={200} height={200} className="border-2 border-white border-opacity-25 rounded-full" />
-            </div>
-            <div className="flex flex-col justify-center items-center max-w-sm">
-                <h1 className="text-6xl text-white">Kewwie</h1>
-                <p className="text-xl text-white text-center opacity-75 md:text-lg">I manage communities online, I also spend my time coding stuff for others</p>
-                <div className="flex space-x-4 my-4">
-                    <a href="/projects" className="border-2 border-white border-opacity-75 rounded py-2 px-6 bg-transparent text-white text-xl font-bold">
-                        Projects
-                    </a>
-                    <a href="/experiences" className="border-2 border-white border-opacity-75 rounded py-2 px-6 bg-transparent text-white text-xl font-bold">
-                        Experiences
-                    </a>
+        <main className="container py-12 space-y-24">
+            <section className="space-y-12">
+                {/* Hero with profile and social links */}
+                <div className="flex flex-col items-center justify-center py-12 text-center space-y-6">
+                    <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-zinc-700 glow">
+                        <Image
+                            src="/kewi-icon.png"
+                            alt="Profile Picture"
+                            width={128}
+                            height={128}
+                            className="object-cover"
+                        />
+                    </div>
+
+                    <div className="space-y-4 max-w-3xl">
+                        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                            <span className="text-white">Hello, I'm </span>
+                            <span className="bg-gradient-to-r from-zinc-200 to-zinc-400 bg-clip-text text-transparent glow-text">
+                                Kewi
+                            </span>
+                        </h1>
+                        <p className="text-xl text-zinc-400">Swedish Developer</p>
+                    </div>
+
+                    <div className="flex space-x-4">
+                        <Link href="https://github.com/yourusername" target="_blank">
+                            <Image src="/icon.png" alt="GitHub" width={40} height={40} />
+                        </Link>
+                        <Link href="https://twitter.com/yourusername" target="_blank">
+                            <Image src="/icon.png" alt="Twitter" width={40} height={40} />
+                        </Link>
+                        <Link href="https://discord.com/users/yourusername" target="_blank">
+                            <Image src="/icon.png" alt="Discord" width={40} height={40} />
+                        </Link>
+                        <Link href="mailto:yourname@example.com" target="_blank">
+                            <Image src="/icon.png" alt="Email" width={40} height={40} />
+                        </Link>
+                    </div>
                 </div>
-            </div>
-        </div>
-    );
+            </section>
+        </main>
+    )
 }
