@@ -16,7 +16,7 @@ export default function ServicesPage() {
                 
                 <div className="mb-4">
                     <p className="text-slate-500">
-                        I'm currently updating the list of services I offer.
+                        I&apos;m currently updating the list of services I offer.
                     </p>
                     <p className="text-emerald-600 font-medium mt-2">
                         Check back soon for more information
