@@ -52,7 +52,7 @@ export default function Portfolio() {
 
                     <div className="space-y-4 max-w-3xl">
                         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-                            <span className="text-white">Hello, I'm </span>
+                            <span className="text-white">Hello, I&apos;m </span>
                             <span className="bg-gradient-to-r from-zinc-200 to-zinc-400 bg-clip-text text-transparent glow-text">
                                 Kewi
                             </span>
@@ -150,13 +150,13 @@ export default function Portfolio() {
                 <div className="text-center space-y-4">
                     <h2 className="text-3xl font-bold">GitHub Projects</h2>
                     <p className="text-zinc-400 max-w-2xl mx-auto">
-                        Some of my GitHub projects that I've worked on
+                        Some of my GitHub projects that I&apos;ve worked on
                     </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project) => (
-                    <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-800 rounded-lg overflow-hidden glow-sm">
+                    <div key={project.id} className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-800 rounded-lg overflow-hidden glow-sm">
                         <div className="p-4 pb-0">
                             <h3 className="text-white font-medium text-lg">{project.title}</h3>
                             <p className="text-zinc-400 text-sm">{project.description}</p>
@@ -164,7 +164,7 @@ export default function Portfolio() {
                         <div className="p-4">
                             <div className="flex flex-wrap gap-2">
                                 {project.technologies.map((tech) => (
-                                <Badge badgeKey={tech} className="bg-gradient-to-br from-zinc-800 to-zinc-900 text-zinc-300">
+                                <Badge key={tech} className="bg-gradient-to-br from-zinc-800 to-zinc-900 text-zinc-300">
                                     {tech}
                                 </Badge>
                                 ))}

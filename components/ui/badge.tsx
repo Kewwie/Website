@@ -1,18 +1,15 @@
 import React from 'react';
 
 interface BadgeProps {
-    badgeKey?: string | null;
     className?: string;
     children: React.ReactNode;
 }
 
 const Badge: React.FC<BadgeProps> = ({
-    badgeKey = null,
     className = "",
     children
 }) => (
-    <div 
-        key={badgeKey || "badge"}
+    <div
         className={`
             inline-flex 
             items-center 
