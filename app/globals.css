@@ -79,5 +79,13 @@
   .glow-text {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   }
+  
+  .popout {
+    @apply transform transition-transform duration-500 hover:scale-105;
+  }
+  
+  .popout-110 {
+    @apply transform transition-transform duration-500 hover:scale-110;
+  }
 }
 
