@@ -8,7 +8,7 @@
             background-position: 0 0;
         }
         100% {
-            background-position: 2vw 2vw;
+            background-position: 4rem 4rem;
         }
     }
 
@@ -16,8 +16,8 @@
         background-image: 
             linear-gradient(to right, var(--grid-line-color, rgba(255, 255, 255, 0.4)) 1px, transparent 1px),
             linear-gradient(to bottom, var(--grid-line-color, rgba(255, 255, 255, 0.4)) 1px, transparent 1px);
-        background-size: 2vw 2vw;
-        animation: move-grid 4s linear infinite;
+        background-size: 4rem 4rem;
+        animation: move-grid 8s linear infinite;
     }
 
     .glow {
