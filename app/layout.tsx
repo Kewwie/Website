@@ -31,7 +31,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <html lang="en">
             <body className={inter.className}>
                 <div className="relative min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-800 text-zinc-100 overflow-hidden">
-                    <CheckerboardBackground />
+                    <GridBackground />
                     <div className="relative z-10 flex-grow flex flex-col">
                         {children}
                     </div>
@@ -42,11 +42,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     );
 }
 
-// Checkerboard Background Component
-function CheckerboardBackground() {
+// Grid Background Component
+function GridBackground() {
     return (
       <div className="absolute inset-0 z-0 opacity-10">
-        <div className="absolute inset-0 bg-checkerboard" />
+        <div className="absolute inset-0 bg-gridnet" />
       </div>
     )
 }
