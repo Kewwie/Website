@@ -39,7 +39,7 @@ export default function Portfolio() {
         <main className="container py-12 space-y-24">
             <section className="space-y-12">
                 <div className="flex flex-col items-center justify-center py-12 text-center space-y-6">
-                    <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-zinc-700 glow">
+                    <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-zinc-700 glow popout-110">
                         <Image
                             src="/kewi-icon.png"
                             alt="Profile Picture"
@@ -50,41 +50,41 @@ export default function Portfolio() {
                     </div>
 
                     <div className="space-y-4 max-w-3xl">
-                        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl popout-110">
                             <span className="text-white">Hello, I&apos;m </span>
                             <span className="bg-gradient-to-r from-zinc-200 to-zinc-400 bg-clip-text text-transparent glow-text">
                                 Kewi
                             </span>
                         </h1>
-                        <p className="text-xl text-zinc-400">Swedish Developer</p>
+                        <p className="text-xl text-zinc-400 popout-110">Swedish Developer</p>
                     </div>
 
                     <div className="flex space-x-4">
                         <Link 
                             href={"https://github.com/" + GITHUB_USERNAME}
                             target="_blank"
-                            className="bg-gradient-to-br from-zinc-600 to-zinc-900 p-3 rounded-full border border-zinc-700 hover:from-zinc-500 hover:to-zinc-700 transition-all glow-sm"
+                            className="bg-gradient-to-br from-zinc-600 to-zinc-900 p-3 rounded-full border border-zinc-700 hover:from-zinc-500 hover:to-zinc-700 glow-sm popout-125"
                         >
                             <FaGithub size={20} />
                         </Link>
                         <Link 
                             href={"https://x.com/" + TWITTER_USERNAME}
                             target="_blank"
-                            className="bg-gradient-to-br from-zinc-600 to-zinc-900 p-3 rounded-full border border-zinc-700 hover:from-zinc-500 hover:to-zinc-700 transition-all glow-sm"
+                            className="bg-gradient-to-br from-zinc-600 to-zinc-900 p-3 rounded-full border border-zinc-700 hover:from-zinc-500 hover:to-zinc-700 glow-sm popout-125"
                         >
                             <FaTwitter size={20} />
                         </Link>
                         <Link
                             href={DISCORD_INVITE}
                             target="_blank"
-                            className="bg-gradient-to-br from-zinc-600 to-zinc-900 p-3 rounded-full border border-zinc-700 hover:from-zinc-500 hover:to-zinc-700 transition-all glow-sm"
+                            className="bg-gradient-to-br from-zinc-600 to-zinc-900 p-3 rounded-full border border-zinc-700 hover:from-zinc-500 hover:to-zinc-700 glow-sm popout-125"
                         >
                             <FaDiscord size={20} />
                         </Link>
                         <Link 
                             href={"mailto:" + EMAIL_ADDRESS}
                             target="_self"
-                            className="bg-gradient-to-br from-zinc-600 to-zinc-900 p-3 rounded-full border border-zinc-700 hover:from-zinc-500 hover:to-zinc-700 transition-all glow-sm"
+                            className="bg-gradient-to-br from-zinc-600 to-zinc-900 p-3 rounded-full border border-zinc-700 hover:from-zinc-500 hover:to-zinc-700 glow-sm popout-125"
                         >
                             <MdEmail size={20} />
                         </Link>
@@ -93,30 +93,30 @@ export default function Portfolio() {
             </section>
             <section className="pt-16">                
                 <div className="grid md:grid-cols-2 gap-12 items-start">
-                    <div className="transform transition-transform duration-500 hover:scale-105">
-                        <h2 className="text-3xl font-bold mb-10">
+                    <div>
+                        <h2 className="text-3xl font-bold mb-10 popout">
                             About Me
                         </h2>
                         <div className="space-y-6">
-                            <p className="text-zinc-400">
+                            <p className="text-zinc-400 popout">
                                 Hey! I&apos;m <strong>Kewi</strong>, an 18-year-old developer from <strong>Sweden</strong>. 
                                 I usually spend my time on Discord, playing games like Minecraft, Valorant, and Fortnite, and helping build and manage online communities.
                             </p>
-                            <p className="text-zinc-400">
+                            <p className="text-zinc-400 popout">
                                 I&apos;ve been coding for years, mainly focusing on backend development. 
                                 I work with databases, APIs, and server-side logic to build various projects. 
                                 I like automating tasks with scripts and programs to make things more efficient and hands-free.
                             </p>
-                            <p className="text-zinc-400">
+                            <p className="text-zinc-400 popout">
                                 I also create maps and games in Fortnite using <strong>UEFN (Unreal Editor for Fortnite)</strong>. 
                                 With <strong>Verse</strong>, I create unique game modes for people to play, offering new experiences for players.</p>
                         </div>
                     </div>
 
                     <div className="space-y-4">
-                        <h2 className="text-3xl font-bold mb-10 transform transition-transform duration-500 hover:scale-105">Tech Stack</h2>
+                        <h2 className="text-3xl font-bold mb-10 popout">Tech Stack</h2>
 
-                        <div className="mt-6 p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm transform transition-transform duration-500 hover:scale-105">
+                        <div className="mt-6 p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm popout">
                             <h4 className="text-lg font-medium mb-2">Languages</h4>
                             <div className="flex flex-wrap gap-2">
                                 <Badge className="bg-gradient-to-br from-zinc-700 to-zinc-900 text-zinc-300">TypeScript</Badge>
@@ -126,7 +126,7 @@ export default function Portfolio() {
                             </div>
                         </div>
 
-                        <div className="p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm transform transition-transform duration-500 hover:scale-105">
+                        <div className="p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm popout">
                             <h4 className="text-lg font-medium mb-2">Databases</h4>
                             <div className="flex flex-wrap gap-2">
                                 <Badge className="bg-gradient-to-br from-zinc-700 to-zinc-900 text-zinc-300">SQLite</Badge>
@@ -136,7 +136,7 @@ export default function Portfolio() {
                             </div>
                         </div>
 
-                        <div className="p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm transform transition-transform duration-500 hover:scale-105">
+                        <div className="p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm popout">
                             <h4 className="text-lg font-medium mb-2">Tools & Platforms</h4>
                             <div className="flex flex-wrap gap-2">
                                 <Badge className="bg-gradient-to-br from-zinc-700 to-zinc-900 text-zinc-300">Docker</Badge>
@@ -148,8 +148,8 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            <section id="projects" className="space-y-12 transform transition-transform duration-500 hover:scale-105">
-                <div className="text-center space-y-4">
+            <section id="projects" className="space-y-12">
+                <div className="text-center space-y-4 popout">
                     <h2 className="text-3xl font-bold">GitHub Projects</h2>
                     <p className="text-zinc-400 max-w-2xl mx-auto">
                         Some of my GitHub projects that I&apos;ve worked on
@@ -158,7 +158,7 @@ export default function Portfolio() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project) => (
-                    <div key={project.id} className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-800 rounded-lg overflow-hidden glow-sm">
+                    <div key={project.id} className="bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-800 rounded-lg overflow-hidden glow-sm popout">
                         <div className="p-4 pb-0">
                             <h3 className="text-white font-medium text-lg">{project.title}</h3>
                             <p className="text-zinc-400 text-sm">{project.description}</p>
@@ -189,7 +189,7 @@ export default function Portfolio() {
                 </div>
                 <div className="flex justify-center">
                 <Link
-                    className="flex items-center px-4 py-2 rounded-md bg-zinc-800 border border-zinc-700 hover:bg-zinc-700 transition-colors"
+                    className="flex items-center px-4 py-2 rounded-md bg-zinc-800 border border-zinc-700 hover:bg-zinc-700 transition-colors popout"
                     href="https://github.com/Kewwie"
                     target="_blank"
                     rel="noopener noreferrer"

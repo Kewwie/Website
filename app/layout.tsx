@@ -1,5 +1,5 @@
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -11,6 +11,20 @@ export const metadata: Metadata = {
     title: "Kewi",
     description: "Cool asf",
 };
+
+export const viewport: Viewport = {
+    initialScale: 1,
+    width: "device-width",
+    height: "device-height",
+    minimumScale: 1,
+    maximumScale: 1,
+    viewportFit: "cover",
+    themeColor: [
+        { media: "(prefers-color-scheme: dark)", color: "#27272a" },
+        { media: "(prefers-color-scheme: light)", color: "#ffffff" }
+    ],
+    colorScheme: "dark"
+}
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
     return (

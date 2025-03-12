@@ -20,6 +20,7 @@ const Footer = () => {
                     <nav className="mb-4 md:mb-0">
                         <ul className="flex space-x-6">
                             <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
+                            <li><Link href="/work" className="hover:text-gray-300">Work</Link></li>
                             <li><Link href="/services" className="hover:text-gray-300">Services</Link></li>
                             <li><Link href="/contact" className="hover:text-gray-300">Contact</Link></li>
                         </ul>
