@@ -100,14 +100,17 @@ export default function Portfolio() {
                         </h2>
                         <div className="space-y-6">
                             <p className="text-zinc-400">
-                                Soon
+                                Hey! I&apos;m <strong>Kewi</strong>, an 18-year-old developer from <strong>Sweden</strong>. 
+                                I usually spend my time on Discord, playing games like Minecraft, Valorant, and Fortnite, and helping build and manage online communities.
                             </p>
                             <p className="text-zinc-400">
-                                Coming
+                                I&apos;ve been programming for years, mainly focusing on backend development. 
+                                I work with databases, APIs, and server-side logic to build various projects. 
+                                I like automating tasks with scripts and programs to make things more efficient and hands-free.
                             </p>
                             <p className="text-zinc-400">
-                                Soon
-                            </p>
+                                I also create maps and games in Fortnite using <strong>UEFN (Unreal Editor for Fortnite)</strong>. 
+                                With <strong>Verse</strong>, I create unique game modes for people to play, offering new experiences for players.</p>
                         </div>
                     </div>
 
