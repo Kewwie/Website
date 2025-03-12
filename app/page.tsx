@@ -38,7 +38,6 @@ export default function Portfolio() {
     return (
         <main className="container py-12 space-y-24">
             <section className="space-y-12">
-                {/* Hero with profile and social links */}
                 <div className="flex flex-col items-center justify-center py-12 text-center space-y-6">
                     <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-zinc-700 glow">
                         <Image
@@ -94,7 +93,7 @@ export default function Portfolio() {
             </section>
             <section className="pt-16">                
                 <div className="grid md:grid-cols-2 gap-12 items-start">
-                    <div>
+                    <div className="transform transition-transform duration-500 hover:scale-105">
                         <h2 className="text-3xl font-bold mb-10">
                             About Me
                         </h2>
@@ -115,9 +114,9 @@ export default function Portfolio() {
                     </div>
 
                     <div className="space-y-4">
-                        <h2 className="text-3xl font-bold mb-10">Tech Stack</h2>
+                        <h2 className="text-3xl font-bold mb-10 transform transition-transform duration-500 hover:scale-105">Tech Stack</h2>
 
-                        <div className="mt-6 p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm">
+                        <div className="mt-6 p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm transform transition-transform duration-500 hover:scale-105">
                             <h4 className="text-lg font-medium mb-2">Languages</h4>
                             <div className="flex flex-wrap gap-2">
                                 <Badge className="bg-gradient-to-br from-zinc-700 to-zinc-900 text-zinc-300">TypeScript</Badge>
@@ -127,7 +126,7 @@ export default function Portfolio() {
                             </div>
                         </div>
 
-                        <div className="p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm">
+                        <div className="p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm transform transition-transform duration-500 hover:scale-105">
                             <h4 className="text-lg font-medium mb-2">Databases</h4>
                             <div className="flex flex-wrap gap-2">
                                 <Badge className="bg-gradient-to-br from-zinc-700 to-zinc-900 text-zinc-300">SQLite</Badge>
@@ -137,7 +136,7 @@ export default function Portfolio() {
                             </div>
                         </div>
 
-                        <div className="p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm">
+                        <div className="p-4 rounded-lg bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700 glow-sm transform transition-transform duration-500 hover:scale-105">
                             <h4 className="text-lg font-medium mb-2">Tools & Platforms</h4>
                             <div className="flex flex-wrap gap-2">
                                 <Badge className="bg-gradient-to-br from-zinc-700 to-zinc-900 text-zinc-300">Docker</Badge>
@@ -149,7 +148,7 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            <section id="projects" className="space-y-12">
+            <section id="projects" className="space-y-12 transform transition-transform duration-500 hover:scale-105">
                 <div className="text-center space-y-4">
                     <h2 className="text-3xl font-bold">GitHub Projects</h2>
                     <p className="text-zinc-400 max-w-2xl mx-auto">
