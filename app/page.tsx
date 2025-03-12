@@ -104,7 +104,7 @@ export default function Portfolio() {
                                 I usually spend my time on Discord, playing games like Minecraft, Valorant, and Fortnite, and helping build and manage online communities.
                             </p>
                             <p className="text-zinc-400">
-                                I&apos;ve been programming for years, mainly focusing on backend development. 
+                                I&apos;ve been coding for years, mainly focusing on backend development. 
                                 I work with databases, APIs, and server-side logic to build various projects. 
                                 I like automating tasks with scripts and programs to make things more efficient and hands-free.
                             </p>
